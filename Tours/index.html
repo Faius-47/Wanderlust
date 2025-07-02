@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours - Wanderlust Travel</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../Home Page/Image/Fevicon.png">
+    <link rel="icon" type="image/x-icon" href="../Home Page/Image/favicon.ico">
+    <link rel="apple-touch-icon" href="../Home Page/Image/Fevicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../Home Page/Image/logo.png" alt="Wanderlust Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../Home Page/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Destinations/index.html" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tours" class="nav-link active">Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../About/index.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Contact/index.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="tours-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Unforgettable Tour Experiences</h1>
+            <p class="hero-subtitle">Join our expertly crafted tours and create memories that will last a lifetime</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Tours Available</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50K+</h3>
+                    <p>Happy Travelers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4.9★</h3>
+                    <p>Average Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <h3>Find Your Perfect Tour</h3>
+                <div class="filter-row">
+                    <div class="filter-group">
+                        <label>Tour Type</label>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">All Tours</button>
+                            <button class="filter-btn" data-filter="adventure">Adventure</button>
+                            <button class="filter-btn" data-filter="cultural">Cultural</button>
+                            <button class="filter-btn" data-filter="luxury">Luxury</button>
+                            <button class="filter-btn" data-filter="family">Family</button>
+                            <button class="filter-btn" data-filter="romantic">Romantic</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Duration</label>
+                        <select class="duration-filter" id="durationFilter">
+                            <option value="all">All Durations</option>
+                            <option value="1-3">1-3 Days</option>
+                            <option value="4-7">4-7 Days</option>
+                            <option value="8-14">8-14 Days</option>
+                            <option value="15+">15+ Days</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Price Range</label>
+                        <select class="price-filter" id="priceFilter">
+                            <option value="all">All Prices</option>
+                            <option value="0-500">Under $500</option>
+                            <option value="500-1000">$500 - $1000</option>
+                            <option value="1000-2000">$1000 - $2000</option>
+                            <option value="2000+">$2000+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search tours..." id="searchInput">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tours Section -->
+    <section class="featured-tours">
+        <div class="container">
+            <h2 class="section-title">Featured Tours</h2>
+            <div class="tours-slider">
+                <div class="tour-slide active" data-category="luxury" data-duration="7" data-price="2499">
+                    <div class="slide-content">
+                        <div class="slide-image">
+                            <img src="Image/European.jpg" alt="Luxury European Tour">
+                        </div>
+                        <div class="slide-info">
+                            <div class="tour-badge">Featured</div>
+                            <h3>Grand European Luxury Tour</h3>
+                            <p>Experience the finest European cities in ultimate luxury with 5-star accommodations, private guides, and exclusive access to iconic landmarks.</p>
+                            <div class="tour-highlights">
+                                <span><i class="fas fa-map-marker-alt"></i> 5 Countries</span>
+                                <span><i class="fas fa-calendar"></i> 7 Days</span>
+                                <span><i class="fas fa-users"></i> Max 8 People</span>
+                                <span><i class="fas fa-star"></i> 4.9 Rating</span>
+                            </div>
+                            <div class="tour-price">From $2,499</div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-slide" data-category="adventure" data-duration="10" data-price="1899">
+                    <div class="slide-content">
+                        <div class="slide-image">
+                            <img src="Image/Japan.jpg" alt="Inca Trail Adventure">
+                        </div>
+                        <div class="slide-info">
+                            <div class="tour-badge">Adventure</div>
+                            <h3>Inca Trail & Machu Picchu Trek</h3>
+                            <p>Embark on the classic Inca Trail adventure to reach the ancient citadel of Machu Picchu, one of the New Seven Wonders of the World.</p>
+                            <div class="tour-highlights">
+                                <span><i class="fas fa-mountain"></i> Trekking</span>
+                                <span><i class="fas fa-calendar"></i> 10 Days</span>
+                                <span><i class="fas fa-users"></i> Max 12 People</span>
+                                <span><i class="fas fa-star"></i> 4.8 Rating</span>
+                            </div>
+                            <div class="tour-price">From $1,899</div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-slide" data-category="cultural" data-duration="14" data-price="3299">
+                    <div class="slide-content">
+                        <div class="slide-image">
+                            <img src="Image/GoldenTempleKyotoJapan.jpg" alt="Japan Cultural Tour">
+                        </div>
+                        <div class="slide-info">
+                            <div class="tour-badge">Cultural</div>
+                            <h3>Complete Japan Cultural Journey</h3>
+                            <p>Immerse yourself in Japan's rich culture, from ancient temples and traditional ceremonies to modern cities and culinary experiences.</p>
+                            <div class="tour-highlights">
+                                <span><i class="fas fa-torii-gate"></i> Cultural Sites</span>
+                                <span><i class="fas fa-calendar"></i> 14 Days</span>
+                                <span><i class="fas fa-users"></i> Max 15 People</span>
+                                <span><i class="fas fa-star"></i> 4.9 Rating</span>
+                            </div>
+                            <div class="tour-price">From $3,299</div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Tours Grid Section -->
+    <section class="tours-grid-section">
+        <div class="container">
+            <h2 class="section-title">All Tours</h2>
+            <div class="tours-grid" id="toursGrid">
+                
+                <!-- Adventure Tours -->
+                <div class="tour-card" data-category="adventure" data-duration="5" data-price="899">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Swiss Alps Adventure">
+                        <div class="tour-badge adventure">Adventure</div>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Swiss Alps Adventure</h3>
+                        <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Switzerland</p>
+                        <p class="tour-description">Experience breathtaking mountain views, pristine lakes, and charming Alpine villages in this adventure-packed tour.</p>
+                        <div class="tour-features">
+                            <span><i class="fas fa-calendar"></i> 5 Days</span>
+                            <span><i class="fas fa-users"></i> Max 10</span>
+                            <span><i class="fas fa-hiking"></i> Hiking</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">From $899</div>
+                            <div class="tour-actions">
+                                <button class="btn btn-outline btn-sm">Details</button>
+                                <button class="btn btn-primary btn-sm">Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card" data-category="adventure" data-duration="8" data-price="1599">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Amazon Jungle Expedition">
+                        <div class="tour-badge adventure">Adventure</div>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Amazon Jungle Expedition</h3>
+                        <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Brazil</p>
+                        <p class="tour-description">Explore the world's largest rainforest with experienced guides, spot exotic wildlife, and learn about indigenous cultures.</p>
+                        <div class="tour-features">
+                            <span><i class="fas fa-calendar"></i> 8 Days</span>
+                            <span><i class="fas fa-users"></i> Max 12</span>
+                            <span><i class="fas fa-tree"></i> Wildlife</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">From $1,599</div>
+                            <div class="tour-actions">
+                                <button class="btn btn-outline btn-sm">Details</button>
+                                <button class="btn btn-primary btn-sm">Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cultural Tours -->
+                <div class="tour-card" data-category="cultural" data-duration="6" data-price="1299">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ancient Egypt Discovery">
+                        <div class="tour-badge cultural">Cultural</div>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Ancient Egypt Discovery</h3>
+                        <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Egypt</p>
+                        <p class="tour-description">Journey through 5,000 years of history visiting the Pyramids, Sphinx, Valley of the Kings, and sailing the Nile River.</p>
+                        <div class="tour-features">
+                            <span><i class="fas fa-calendar"></i> 6 Days</span>
+                            <span><i class="fas fa-users"></i> Max 16</span>
+                            <span><i class="fas fa-monument"></i> Historical</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">From $1,299</div>
+                            <div class="tour-actions">
+                                <button class="btn btn-outline btn-sm">Details</button>
+                                <button class="btn btn-primary btn-sm">Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card" data-category="cultural" data-duration="9" data-price="1799">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="India Golden Triangle">
+                        <div class="tour-badge cultural">Cultural</div>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>India Golden Triangle</h3>
+                        <p class="tour-location"><i class="fas fa-map-marker-alt"></i> India</p>
+                        <p class="tour-description">Experience India's most iconic destinations: Delhi, Agra, and Jaipur, including the magnificent Taj Mahal.</p>
+                        <div class="tour-features">
+                            <span><i class="fas fa-calendar"></i> 9 Days</span>
+                            <span><i class="fas fa-users"></i> Max 14</span>
+                            <span><i class="fas fa-mosque"></i> Temples</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">From $1,799</div>
+                            <div class="tour-actions">
+                                <button class="btn btn-outline btn-sm">Details</button>
+                                <button class="btn btn-primary btn-sm">Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Tours -->
+                <div class="tour-card" data-category="luxury" data-duration="12" data-price="4999">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="African Safari Luxury">
+                        <div class="tour-badge luxury">Luxury</div>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Ultimate African Safari</h3>
+                        <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Kenya & Tanzania</p>
+                        <p class="tour-description">Luxury safari experience with private game drives, luxury tented camps, and exclusive access to premium wildlife reserves.</p>
+                        <div class="tour-features">
+                            <span><i class="fas fa-calendar"></i> 12 Days</span>
+                            <span><i class="fas fa-users"></i> Max 8</span>
+                            <span><i class="fas fa-paw"></i> Big Five</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">From $4,999</div>
+                            <div class="tour-actions">
+                                <button class="btn btn-outline btn-sm">Details</button>
+                                <button class="btn btn-primary btn-sm">Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family Tours -->
+                <div class="tour-card" data-category="family" data-duration="7" data-price="799">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Australia Family Adventure">
+                        <div class="tour-badge family">Family</div>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Australia Family Adventure</h3>
+                        <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Australia</p>
+                        <p class="tour-description">Perfect family tour with Sydney Opera House, Great Barrier Reef snorkeling, and wildlife encounters suitable for all ages.</p>
+                        <div class="tour-features">
+                            <span><i class="fas fa-calendar"></i> 7 Days</span>
+                            <span><i class="fas fa-users"></i> Max 20</span>
+                            <span><i class="fas fa-child"></i> Kid-Friendly</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">From $799</div>
+                            <div class="tour-actions">
+                                <button class="btn btn-outline btn-sm">Details</button>
+                                <button class="btn btn-primary btn-sm">Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Romantic Tours -->
+                <div class="tour-card" data-category="romantic" data-duration="5" data-price="1199">
+                    <div class="tour-image">
+                        <img src="Image/Santorini Romantic.jpg" alt="Santorini Romance">
+                        <div class="tour-badge romantic">Romantic</div>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Santorini Romantic </h3>
+                        <p class="tour-location"><i class="fas fa-map-marker-alt"></i> Greece</p>
+                        <p class="tour-description">Perfect couples retreat with stunning sunsets, luxury accommodations, private dining, and romantic island experiences.</p>
+                        <div class="tour-features">
+                            <span><i class="fas fa-calendar"></i> 5 Days</span>
+                            <span><i class="fas fa-users"></i> Max 4</span>
+                            <span><i class="fas fa-heart"></i> Couples</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">From $1,199</div>
+                            <div class="tour-actions">
+                                <button class="btn btn-outline btn-sm">Details</button>
+                                <button class="btn btn-primary btn-sm">Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card" data-category="romantic" data-duration="4" data-price="999">
+                    <div class="tour-image">
+                        <img src="../Home Page/Image/Paris.jpg" alt="Paris Romance">
+                        <div class="tour-badge romantic">Romantic</div>
+                        <div class="tour-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Paris Romance Package</h3>
+                        <p class="tour-location"><i class="fas fa-map-marker-alt"></i> France</p>
+                        <p class="tour-description">Experience the most romantic city in the world with Seine river cruises, candlelit dinners, and intimate city walks.</p>
+                        <div class="tour-features">
+                            <span><i class="fas fa-calendar"></i> 4 Days</span>
+                            <span><i class="fas fa-users"></i> Max 6</span>
+                            <span><i class="fas fa-wine-glass"></i> Wine Tours</span>
+                        </div>
+                        <div class="tour-bottom">
+                            <div class="tour-price">From $999</div>
+                            <div class="tour-actions">
+                                <button class="btn btn-outline btn-sm">Details</button>
+                                <button class="btn btn-primary btn-sm">Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Tours Section -->
+    <section class="why-choose-tours">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Tours?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Expert Local Guides</h3>
+                    <p>Professional, knowledgeable guides who bring destinations to life with insider stories and local insights.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Small Group Experience</h3>
+                    <p>Intimate group sizes ensure personalized attention and more meaningful travel experiences.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety First</h3>
+                    <p>Comprehensive safety protocols, insurance coverage, and 24/7 support for peace of mind.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>All-Inclusive Packages</h3>
+                    <p>Everything taken care of - accommodations, meals, activities, and transportation included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Travelers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The Swiss Alps Adventure was absolutely incredible! Our guide was knowledgeable and the scenery was breathtaking. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <span>Swiss Alps Adventure</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Our family loved the Australia tour! Everything was perfectly organized and the kids had an amazing time. Thank you for an unforgettable experience!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Michael Chen">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <span>Australia Family Adventure</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The romantic Santorini getaway exceeded all expectations. Perfect for our anniversary celebration. We'll definitely book again!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Emma Rodriguez">
+                        <div>
+                            <h4>Emma Rodriguez</h4>
+                            <span>Santorini Romantic Getaway</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Latest Tours</h2>
+                <p>Be the first to know about new tour packages, special offers, and exclusive travel deals</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" id="emailInput">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../Home Page/Image/footer-logo.png" alt="Wanderlust Travel Connoisseurs" class="footer-logo-img">
+                    </div>
+                    <p>Your gateway to extraordinary travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../Home Page/index.html">Home</a></li>
+                        <li><a href="../Destinations/index.html">Destinations</a></li>
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="../Contact/index.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@wanderlust.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Travel St, Adventure City</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

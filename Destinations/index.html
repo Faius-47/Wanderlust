@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Wanderlust Travel</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../Home Page/Image/Fevicon.png">
+    <link rel="icon" type="image/x-icon" href="../Home Page/Image/favicon.ico">
+    <link rel="apple-touch-icon" href="../Home Page/Image/Fevicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../Home Page/Image/logo.png" alt="Wanderlust Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../Home Page/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#destinations" class="nav-link active">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Tours/index.html" class="nav-link">Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../About/index.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Contact/index.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="destinations-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Explore Amazing Destinations</h1>
+            <p class="hero-subtitle">Discover breathtaking places around the world and create unforgettable memories</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <h3>Filter Destinations</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Destinations</button>
+                    <button class="filter-btn" data-filter="asia">Asia</button>
+                    <button class="filter-btn" data-filter="europe">Europe</button>
+                    <button class="filter-btn" data-filter="americas">Americas</button>
+                    <button class="filter-btn" data-filter="africa">Africa</button>
+                    <button class="filter-btn" data-filter="oceania">Oceania</button>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search destinations..." id="searchInput">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Destinations Section -->
+    <section class="destinations-grid-section">
+        <div class="container">
+            <div class="destinations-grid" id="destinationsGrid">
+                
+                <!-- Asia Destinations -->
+                <div class="destination-card" data-category="asia">
+                    <div class="destination-image">
+                        <img src="../Home Page/Image/Tokyo.jpg" alt="Tokyo, Japan" class="destination-img">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-torii-gate"></i>
+                                <p>Tokyo, Japan</p>
+                            </div>
+                        </div>
+                        <div class="price-tag">From $1,299</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Tokyo, Japan</h3>
+                        <p class="destination-description">Experience the perfect blend of traditional culture and modern innovation in Japan's bustling capital city.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag"><i class="fas fa-calendar"></i> 7 Days</span>
+                            <span class="feature-tag"><i class="fas fa-users"></i> Max 12</span>
+                            <span class="feature-tag"><i class="fas fa-plane"></i> Flights Included</span>
+                        </div>
+                        <div class="destination-actions">
+                            <button class="btn btn-primary">Book Now</button>
+                            <button class="btn btn-outline">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="asia">
+                    <div class="destination-image">
+                        <img src="../Home Page/Image/Indonesia.jpg" alt="Bali, Indonesia" class="destination-img">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-umbrella-beach"></i>
+                                <p>Bali, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="price-tag">From $799</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Bali, Indonesia</h3>
+                        <p class="destination-description">Relax in tropical paradise with stunning beaches, ancient temples, and vibrant local culture.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag"><i class="fas fa-calendar"></i> 5 Days</span>
+                            <span class="feature-tag"><i class="fas fa-users"></i> Max 10</span>
+                            <span class="feature-tag"><i class="fas fa-hotel"></i> Resort Stay</span>
+                        </div>
+                        <div class="destination-actions">
+                            <button class="btn btn-primary">Book Now</button>
+                            <button class="btn btn-outline">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Europe Destinations -->
+                <div class="destination-card" data-category="europe">
+                    <div class="destination-image">
+                        <img src="../Home Page/Image/Paris.jpg" alt="Paris, France" class="destination-img">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-tower-observation"></i>
+                                <p>Paris, France</p>
+                            </div>
+                        </div>
+                        <div class="price-tag">From $999</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Paris, France</h3>
+                        <p class="destination-description">Discover the city of lights with its romantic atmosphere, world-class museums, and rich history.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag"><i class="fas fa-calendar"></i> 6 Days</span>
+                            <span class="feature-tag"><i class="fas fa-users"></i> Max 15</span>
+                            <span class="feature-tag"><i class="fas fa-utensils"></i> Food Tours</span>
+                        </div>
+                        <div class="destination-actions">
+                            <button class="btn btn-primary">Book Now</button>
+                            <button class="btn btn-outline">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="europe">
+                    <div class="destination-image">
+                        <img src="Image/Santorini.jpg" alt="Santorini, Greece" class="destination-img">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-church"></i>
+                                <p>Santorini, Greece</p>
+                            </div>
+                        </div>
+                        <div class="price-tag">From $1,199</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Santorini, Greece</h3>
+                        <p class="destination-description">Experience breathtaking sunsets, whitewashed villages, and crystal-clear waters in this Greek island paradise.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag"><i class="fas fa-calendar"></i> 5 Days</span>
+                            <span class="feature-tag"><i class="fas fa-users"></i> Max 8</span>
+                            <span class="feature-tag"><i class="fas fa-ship"></i> Island Hopping</span>
+                        </div>
+                        <div class="destination-actions">
+                            <button class="btn btn-primary">Book Now</button>
+                            <button class="btn btn-outline">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Americas Destinations -->
+                <div class="destination-card" data-category="americas">
+                    <div class="destination-image">
+                        <img src="Image/New York.jpg" alt="New York City, USA" class="destination-img">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-building"></i>
+                                <p>New York City, USA</p>
+                            </div>
+                        </div>
+                        <div class="price-tag">From $899</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>New York City, USA</h3>
+                        <p class="destination-description">Explore the city that never sleeps with its iconic landmarks, Broadway shows, and diverse neighborhoods.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag"><i class="fas fa-calendar"></i> 4 Days</span>
+                            <span class="feature-tag"><i class="fas fa-users"></i> Max 20</span>
+                            <span class="feature-tag"><i class="fas fa-theater-masks"></i> Broadway Shows</span>
+                        </div>
+                        <div class="destination-actions">
+                            <button class="btn btn-primary">Book Now</button>
+                            <button class="btn btn-outline">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="americas">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Machu Picchu, Peru" class="destination-img">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-mountain"></i>
+                                <p>Machu Picchu, Peru</p>
+                            </div>
+                        </div>
+                        <div class="price-tag">From $1,599</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Machu Picchu, Peru</h3>
+                        <p class="destination-description">Discover the ancient Incan citadel high in the Andes mountains, a UNESCO World Heritage site.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag"><i class="fas fa-calendar"></i> 8 Days</span>
+                            <span class="feature-tag"><i class="fas fa-users"></i> Max 10</span>
+                            <span class="feature-tag"><i class="fas fa-hiking"></i> Trekking</span>
+                        </div>
+                        <div class="destination-actions">
+                            <button class="btn btn-primary">Book Now</button>
+                            <button class="btn btn-outline">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Africa Destinations -->
+                <div class="destination-card" data-category="africa">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Serengeti, Tanzania" class="destination-img">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-paw"></i>
+                                <p>Serengeti, Tanzania</p>
+                            </div>
+                        </div>
+                        <div class="price-tag">From $2,299</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Serengeti, Tanzania</h3>
+                        <p class="destination-description">Witness the Great Migration and experience Africa's most spectacular wildlife in their natural habitat.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag"><i class="fas fa-calendar"></i> 10 Days</span>
+                            <span class="feature-tag"><i class="fas fa-users"></i> Max 8</span>
+                            <span class="feature-tag"><i class="fas fa-binoculars"></i> Safari</span>
+                        </div>
+                        <div class="destination-actions">
+                            <button class="btn btn-primary">Book Now</button>
+                            <button class="btn btn-outline">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oceania Destinations -->
+                <div class="destination-card" data-category="oceania">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Sydney, Australia" class="destination-img">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-landmark"></i>
+                                <p>Sydney, Australia</p>
+                            </div>
+                        </div>
+                        <div class="price-tag">From $1,799</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Sydney, Australia</h3>
+                        <p class="destination-description">Explore the iconic Opera House, beautiful beaches, and vibrant city life in Australia's largest city.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag"><i class="fas fa-calendar"></i> 7 Days</span>
+                            <span class="feature-tag"><i class="fas fa-users"></i> Max 12</span>
+                            <span class="feature-tag"><i class="fas fa-water"></i> Harbor Cruise</span>
+                        </div>
+                        <div class="destination-actions">
+                            <button class="btn btn-primary">Book Now</button>
+                            <button class="btn btn-outline">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Travel Deals</h2>
+                <p>Subscribe to our newsletter and get exclusive offers and travel inspiration delivered to your inbox</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" id="emailInput">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../Home Page/Image/footer-logo.png" alt="Wanderlust Travel Connoisseurs" class="footer-logo-img">
+                    </div>
+                    <p>Your gateway to extraordinary travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../Home Page/index.html">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="../Contact/index.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@wanderlust.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Travel St, Adventure City</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
