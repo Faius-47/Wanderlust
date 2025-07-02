@@ -114,7 +114,7 @@ body {
     display: flex;
     align-items: center;
     padding: 100px 20px 50px;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)), url('Image/slider.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)), url('slider.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
